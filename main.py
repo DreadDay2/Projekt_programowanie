@@ -17,7 +17,7 @@ player.collider = BoxCollider(player, Vec3(0, 1, 0), Vec3(1, 2, 1))
 
 gun = Entity(model='AK-47.obj', parent=camera.ui,
              scale=0.24, color=color.black, on_cooldown=False, position=(0.5, -0.4),
-             rotation=(15, 72, 5), texture='ak47.png')
+             rotation=(15, 72, 5))
 gun.muzzle_flash = Entity(parent=gun, world_scale=.5,
                           model='AK-47.obj', color=color.yellow, enabled=False)
 
